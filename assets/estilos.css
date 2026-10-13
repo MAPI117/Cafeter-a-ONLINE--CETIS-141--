@@ -324,7 +324,7 @@ button{cursor:pointer}
 .btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
 .etiqueta{display:inline-block;background:#fff4cb;color:#6B1E2B;padding:6px 10px;border-radius:15px;font-size:12px;font-weight:800}
 .tarjeta{border:1px solid #eadfe0;box-shadow:0 7px 20px #35131310;text-align:left;display:flex;flex-direction:column;gap:10px;padding:22px}
-.tarjeta h3{color:#6B1E2B}
+.tarjeta h3{color: white}
 .tarjeta p{line-height:1.5;margin:0}
 .tarjeta .precio{color:#8a233b;margin-top:auto}
 .tarjeta .btn{align-self:stretch}
