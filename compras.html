@@ -1,73 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <meta content="#6B1E2B" name="theme-color"/>
-  <title>
-   Seleccionar compras | 141 LEGENDS
-  </title>
-  <link href="assets/estilos.css" rel="stylesheet"/>
-  <script defer="" src="assets/app.js">
-  </script>
- </head>
- <body data-pagina="compras">
-  <header class="encabezado">
-   <div class="marca">
-    <a href="index.html">
-     <img alt="Logo CETIS 141" src="assets/logo.png"/>
-    </a>
-    <div class="nombre">
-     <h1>
-      141 LEGENDS
-     </h1>
-     <p>
-      LA ONLINE SHOP · COOPERATIVA ESCOLAR
-     </p>
-    </div>
-   </div>
-   <nav aria-label="Navegación principal" class="menu-principal">
-    <ul>
-     <li>
-      <a class="" href="index.html">
-       Inicio
-      </a>
-     </li>
-     <li>
-      <a class="activo" href="compras.html">
-       Productos
-      </a>
-     </li>
-     <li>
-      <a class="" href="carrito.html">
-       Carrito
-       <span class="contador" data-contador="">
-        0
-       </span>
-      </a>
-     </li>
-    </ul>
-   </nav>
-  </header>
-  
-   
-<main class="container compras-layout">
-        <!-- CATÁLOGO PRINCIPAL: 9 TARJETAS -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6B1E2B">
+    <title>Seleccionar compras | 141 LEGENDS</title>
+    <link href="assets/estilos.css" rel="stylesheet">
+    <script defer src="assets/app.js"></script>
+</head>
+<body data-pagina="compras">
+
+    <header class="encabezado">
+        <div class="marca">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Logo CETIS 141">
+            </a>
+            <div class="nombre">
+                <h1>141 LEGENDS</h1>
+                <p>LA ONLINE SHOP · COOPERATIVA ESCOLAR</p>
+            </div>
+        </div>
+
+        <nav class="menu-principal" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a class="activo" href="compras.html">Productos</a></li>
+                <li>
+                    <a href="carrito.html">
+                        Carrito
+                        <span class="contador" data-contador="">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container compras-layout">
+
+        <!-- CATÁLOGO PRINCIPAL: 6 TARJETAS -->
         <section class="catalogo-principal" aria-labelledby="catalogo-titulo">
             <h2 class="titulo-seccion" id="catalogo-titulo">
                 Especiales de la semana
             </h2>
+
             <p class="subtitulo">
                 Elige tus alimentos y agrégalos a tu carrito
             </p>
+
             <div class="barra-catalogo">
                 <p class="saludo" id="saludo"></p>
+
                 <a class="btn btn-dorado" href="carrito.html">
                     Ver mi carrito 🛒
                     <span data-contador="">0</span>
                 </a>
             </div>
 
+
+
+
+            <div class="rejilla-paquetes">
 
                 <article class="tarjeta" id="chicles">
                     <span class="etiqueta">producto</span>
@@ -158,15 +150,17 @@
                         + Agregar al carrito
                     </button>
                 </article>
-</main>
-   </section>
- <main>
-  <!-- CALENDARIO: CONSERVA LAS 5 TARJETAS ADICIONALES -->
+            </div>
+        </section>
+
+        <!-- CALENDARIO: CONSERVA LAS 5 TARJETAS ADICIONALES -->
         <aside class="panel-calendario" aria-labelledby="calendario-titulo">
             <h2 id="calendario-titulo">
                 <span aria-hidden="true">▦</span> Calendario
             </h2>
+
             <div class="rejilla-calendario">
+
                 <article class="tarjeta">
                     <span class="etiqueta">Lunes</span>
                     <h3>🍽️ Chicharrón en salsa verde</h3>
@@ -255,4 +249,3 @@
 
 </body>
 </html>
-
