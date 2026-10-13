@@ -298,6 +298,8 @@ border: 3px solid #6B1E2B;
     margin: 0;
 }
 
+
+/*pluto el que lo lea jejeejje*/
 *{box-sizing:border-box}
 body{margin:0;padding:20px;color:#292929;font-family:Arial,sans-serif;min-height:100vh}
 button,input{font:inherit}
@@ -366,8 +368,6 @@ table.carrito-tabla th{background:#f7eff0;color:#6B1E2B}
 .footer-contenido{grid-template-columns:1fr;gap:22px}
 .footer-inferior{flex-direction:column;text-align:center}
 .acciones{justify-content:center}}
-
-/*pluto el que lo lea jejeejje*/
 
 body[data-pagina="compras"] main.container {
     background:
