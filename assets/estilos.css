@@ -19,7 +19,7 @@ body[data-pagina="login"] main.container {
     padding: 45px 25px;
     border-radius: 18px;
 }
-body[data-pagina="compras"] main.container {
+body[data-pagina="compras"] main.contenedor-especial {
     background:
         linear-gradient(
             rgba(40, 10, 20, 0.30),
