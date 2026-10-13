@@ -433,89 +433,11 @@ body[data-pagina="compras"] .layout-tienda {
     align-items: stretch;
 }
 
-/* Ajustar catálogo */
+
 body[data-pagina="compras"] .layout-tienda > .container {
     width: 100%;
     min-width: 0;
     margin: 0;
-}
-
-/* Carrusel lateral */
-.carrusel-lateral {
-    position: relative;
-    min-height: 600px;
-    border-radius: 18px;
-    overflow: hidden;
-    background: #6B1E2B;
-    box-shadow: 0 5px 24px rgba(0, 0, 0, 0.15);
-}
-
-/* Contenedor de imágenes */
-.carrusel-imagenes {
-    position: absolute;
-    inset: 0;
-}
-
-/* Imágenes */
-.imagen-carrusel {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-    object-position: center;
-
-    opacity: 0;
-    transition: opacity 0.8s ease;
-}
-
-/* Imagen visible */
-.imagen-carrusel.activa {
-    opacity: 1;
-}
-
-/* Botones del carrusel */
-.controles-carrusel {
-    position: absolute;
-    bottom: 18px;
-    left: 0;
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    z-index: 2;
-}
-
-.controles-carrusel button {
-    background: rgba(107, 30, 43, 0.85);
-    color: white;
-
-    border: 1px solid #F5C542;
-    border-radius: 50%;
-
-    width: 42px;
-    height: 42px;
-    cursor: pointer;
-
-    font-size: 20px;
-}
-
-.controles-carrusel button:hover {
-    background: #8B3042;
-}
-
-/* Adaptación para pantallas pequeñas */
-@media (max-width: 950px) {
-
-    body[data-pagina="compras"] .layout-tienda {
-        grid-template-columns: 1fr;
-        margin: 20px auto;
-    }
-
-    .carrusel-lateral {
-        min-height: 250px;
-    }
 }
 
 /* Catálogo y calendario en columnas independientes */
