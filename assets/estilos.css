@@ -338,7 +338,7 @@ button{cursor:pointer}
 .error{color:#a12626;font-weight:600;min-height:22px}
 .aviso{font-size:12px;color:#6d6464!important}
 .barra-catalogo,.cabecera-carrito{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:22px}
-.saludo{color:#6B1E2B;font-weight:bold}
+.saludo{color: white;font-weight:bold}
 .contador{background:#f5c542;color:#3c2026;border-radius:30px;padding:3px 8px;font-size:12px}
 .toast{position:fixed;bottom:22px;right:22px;background:#3e2228;color:white;padding:15px 22px;border-radius:12px;box-shadow:0 7px 25px #0003;z-index:10}
 .vacio{text-align:center;padding:45px 15px;color:#6d6060}
