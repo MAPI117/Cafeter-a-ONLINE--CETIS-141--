@@ -2,11 +2,14 @@
 // Catálogo de ejemplo. Modifica aquí productos y precios.
 const PRODUCTOS=[
 {id:1,nombre:"Chicles",detalle:"orbit, traident",precio:5.00},
-{id:2,nombre:"Sopa fría con picadillo",detalle:"Comida completa del día",precio:40},
-{id:3,nombre:"Pechuga rellena",detalle:"Con espagueti blanco",precio:50},
-{id:4,nombre:"Guiso de res",detalle:"Con salsa de mora y ensalada rusa",precio:50},
-{id:5,nombre:"Combo de Maruchan",detalle:"2 Maruchans y 2 refrescos",precio:100},
-{id:6,nombre:"Agua natural",detalle:"Botella de agua",precio:15}
+{id:2,nombre:"Cereales",detalle:"choco crispi",precio:25.00},
+{id:3,nombre:"Chocolate",detalle:"carlosV, milkeway",precio:20.00},
+{id:4,nombre:"Chilaquiles",detalle:"en salsa verde",precio:40},
+{id:5,nombre:"Tortas",detalle:"Jamon, Salchicha",precio:30},
+{id:6,nombre:"Paletas",detalle:"tarrito, pinta azul",precio:3.00},
+{id:7,nombre:"Refrescos",detalle:"toronja, uva, limon",precio:25.00},
+{id:8,nombre:"Dulces",detalle:"pelonrico, skwinkles",precio:15.00},
+{id:9,nombre:"Aguas",detalle:"mango, limon, guayaba",precio:25}
 ];
 const CLAVE_CARRITO="141legends_carrito_v1",CLAVE_USUARIO="141legends_usuario_v1";
 const dinero=n=>new Intl.NumberFormat("es-MX",{style:"currency",currency:"MXN"}).format(n);
