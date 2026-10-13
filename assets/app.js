@@ -1,7 +1,7 @@
 "use strict";
 // Catálogo de ejemplo. Modifica aquí productos y precios.
 const PRODUCTOS=[
-{id:1,nombre:"Chicharrón en salsa verde",detalle:"Plato grande con arroz rojo",precio:40},
+{id:1,nombre:"Chicles",detalle:"orbit, traident",precio:5.00},
 {id:2,nombre:"Sopa fría con picadillo",detalle:"Comida completa del día",precio:40},
 {id:3,nombre:"Pechuga rellena",detalle:"Con espagueti blanco",precio:50},
 {id:4,nombre:"Guiso de res",detalle:"Con salsa de mora y ensalada rusa",precio:50},
