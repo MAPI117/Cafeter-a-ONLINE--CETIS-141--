@@ -517,3 +517,203 @@ body[data-pagina="compras"] .layout-tienda > .container {
         min-height: 250px;
     }
 }
+
+/* Catálogo y calendario en columnas independientes */
+body[data-pagina="compras"] {
+    margin: 0;
+    padding: 20px;
+}
+
+body[data-pagina="compras"] main.container.compras-layout {
+    width: 100%;
+    max-width: 1500px;
+    margin: 20px auto 35px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 250px;
+    gap: 18px;
+    align-items: stretch;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    overflow: visible;
+}
+
+/* Fondo gris solo detrás de los productos */
+body[data-pagina="compras"] .catalogo-principal {
+    min-width: 0;
+    padding: 28px 22px;
+    background: #c5b5ac;
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+body[data-pagina="compras"] .catalogo-principal > h2,
+body[data-pagina="compras"] .catalogo-principal > .subtitulo {
+    text-align: center;
+}
+
+body[data-pagina="compras"] .catalogo-principal > h2 {
+    color: #70202d;
+    margin: 12px 0 8px;
+}
+
+body[data-pagina="compras"] .catalogo-principal > .subtitulo {
+    color: white;
+    margin-bottom: 26px;
+}
+
+/* Cuadrícula de productos */
+body[data-pagina="compras"] .rejilla-paquetes,
+body[data-pagina="compras"] .productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    width: 100%;
+}
+
+body[data-pagina="compras"] .tarjeta {
+    min-width: 0;
+    padding: 16px;
+    background: rgba(255, 255, 255, .96);
+    border: 1px solid #eadfe0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+body[data-pagina="compras"] .tarjeta h3 {
+    color: #6b1e2b;
+    font-size: 16px;
+    margin: 4px 0;
+}
+
+body[data-pagina="compras"] .tarjeta p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+body[data-pagina="compras"] .tarjeta .precio {
+    margin-top: auto;
+    color: #8a233b;
+    font-weight: bold;
+}
+
+body[data-pagina="compras"] .tarjeta .boton-tarjeta,
+body[data-pagina="compras"] .tarjeta .btn {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Panel del calendario a la derecha */
+body[data-pagina="compras"] .panel-calendario {
+    width: 100%;
+    min-width: 0;
+    padding: 12px 12px;
+    box-sizing: border-box;
+    background: #fff9eb;
+    border: 1px solid #70202d;
+    border-radius: 12px;
+    box-shadow: none;
+    align-self: stretch;
+}
+
+body[data-pagina="compras"] .panel-calendario h2 {
+    color: #70202d;
+    font-size: 20px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+/* Categorías del calendario */
+body[data-pagina="compras"] .panel-calendario .categorias,
+body[data-pagina="compras"] .panel-calendario .categorias-calendario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+body[data-pagina="compras"] .panel-calendario .categoria,
+body[data-pagina="compras"] .panel-calendario .categorias-calendario a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 48px;
+    padding: 7px 8px;
+    color: #fcfcfc;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+body[data-pagina="compras"] .panel-calendario .categoria:hover,
+body[data-pagina="compras"] .panel-calendario .categoria.activa,
+body[data-pagina="compras"] .panel-calendario .categoria-activa,
+body[data-pagina="compras"] .panel-calendario .categorias-calendario a:hover {
+    background: #f53d05;
+}
+
+body[data-pagina="compras"] .panel-calendario .categoria-icono,
+body[data-pagina="compras"] .panel-calendario .icono-categoria {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    background: #ffedbd;
+    border-radius: 50%;
+    font-size: 19px;
+}
+
+body[data-pagina="compras"] .panel-calendario .flecha {
+    margin-left: auto;
+    font-size: 23px;
+}
+
+/* Footer debajo del catálogo y del calendario */
+body[data-pagina="compras"] .footer {
+    width: 100%;
+    max-width: 1500px;
+    margin: 35px auto 0;
+    box-sizing: border-box;
+}
+
+/* Adaptación para tabletas */
+@media (max-width: 1050px) {
+    body[data-pagina="compras"] main.container.compras-layout {
+        grid-template-columns: minmax(0, 1fr) 220px;
+        gap: 14px;
+    }
+
+    body[data-pagina="compras"] .rejilla-paquetes,
+    body[data-pagina="compras"] .productos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Adaptación para celulares */
+@media (max-width: 650px) {
+    body[data-pagina="compras"] {
+        padding: 12px;
+    }
+
+    body[data-pagina="compras"] main.container.compras-layout {
+        grid-template-columns: 1fr;
+    }
+
+    body[data-pagina="compras"] .rejilla-paquetes,
+    body[data-pagina="compras"] .productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    body[data-pagina="compras"] .panel-calendario .categorias,
+    body[data-pagina="compras"] .panel-calendario .categorias-calendario {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
