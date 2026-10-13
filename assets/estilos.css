@@ -19,7 +19,8 @@ body[data-pagina="login"] main.container {
     padding: 45px 25px;
     border-radius: 18px;
 }
-section[data-pagina="compras"] main.containedor1 {
+
+body[data-pagina="compras"] section.contenedor1 {
     background:
         linear-gradient(
             rgba(40, 10, 20, 0.30),
@@ -38,6 +39,7 @@ section[data-pagina="compras"] main.containedor1 {
     border-radius: 18px;
     overflow: hidden;
 }
+
 
 /* Tarjetas de productos */
 body[data-pagina="compras"] .tarjeta {
