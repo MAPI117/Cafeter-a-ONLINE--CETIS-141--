@@ -19,7 +19,7 @@ body[data-pagina="login"] main.container {
     padding: 45px 25px;
     border-radius: 18px;
 }
-.contenedor1 {
+section[data-pagina="compras"] main.containedor1 {
     background:
         linear-gradient(
             rgba(40, 10, 20, 0.30),
@@ -27,17 +27,14 @@ body[data-pagina="login"] main.container {
         ),
         url("fondo-productos.jpg");
 
-    /* Configuración de la imagen */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    /* Espaciado */
     padding: 45px 30px;
     margin-top: 30px;
     margin-bottom: 45px;
 
-    /* Diseño del contenedor */
     border-radius: 18px;
     overflow: hidden;
 }
