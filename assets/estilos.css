@@ -19,7 +19,59 @@ body[data-pagina="login"] main.container {
     padding: 45px 25px;
     border-radius: 18px;
 }
+body[data-pagina="compras"] main.container {
+    background:
+        linear-gradient(
+            rgba(40, 10, 20, 0.30),
+            rgba(40, 10, 20, 0.30)
+        ),
+        url("fondo-productos.jpg");
 
+    /* Configuración de la imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Espaciado */
+    padding: 45px 30px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+
+    /* Diseño del contenedor */
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+/* Tarjetas de productos */
+body[data-pagina="compras"] .tarjeta {
+    background: rgba(255, 255, 255, 0.94);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border-radius: 12px;
+    padding: 22px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Título de la sección */
+body[data-pagina="compras"] .titulo-seccion {
+    color: #6B1E2B;
+}
+
+/* Diseño para celulares */
+@media (max-width: 600px) {
+
+    body[data-pagina="compras"] main.container {
+        padding: 25px 15px;
+        margin-top: 20px;
+    }
+
+    body[data-pagina="compras"] .tarjeta {
+        padding: 18px;
+    }
+}
 header {
     background-color: #6B1E2B;
     color: #FFFFFF;
